@@ -1,5 +1,6 @@
 const palindromes = function (string) {
     string = string.toLowerCase();
+    string = string.replace(/[\p{P}\p{Z}]/gu, '');
     const revString = string.split("").reverse().join("");
     if (revString === string){
         return true;
