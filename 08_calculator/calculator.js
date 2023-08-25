@@ -16,6 +16,8 @@ const multiply = function(args) {
     sum *= args[i];
   }
   return sum;
+  //actually this can also be done with .reduce, 
+  //just change the plus to a *
 };
 
 const power = function(x,y) {
